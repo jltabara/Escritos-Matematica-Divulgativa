@@ -1,0 +1,291 @@
+
+\documentclass[a4paper, 12pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%Paquetes
+\usepackage[spanish]{babel}  
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage{cmbright}  %%%%%%% El tipo de letra
+\usepackage{setspace}
+\onehalfspacing  %%%%%%%%%%% Espacio y medio de interlineado
+\parskip=1em  %%%%%%%%%%%% Separacion entre parrafos
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%
+\title{La Irrazonable Eficacia de la Matemática}
+\author{R. Hamming}
+\date{}
+%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+
+\vspace{-1.8cm}
+\textbf \maketitle
+
+\end{tcolorbox}
+
+\bigskip
+ 
+
+\subsection*{Prólogo}
+
+ El título evidencia que se trata de un debate filosófico. No me disculparé por la filosofía, aunque soy bien consciente de que la mayoría de los científicos, ingenieros y matemáticos tienen poca consideración por ella; en lugar de eso dedicaré este corto prólogo a justificar el enfoque adoptado.
+
+
+El hombre, hasta donde me consta, siempre se ha preguntado acerca de sí mismo, del mundo que le rodea y de la vida. Tenemos muchos mitos del pasado que nos dicen cómo y por qué Dios, o los dioses, formaron al hombre y al universo. Los llamaré explicaciones teológicas. Tienen una característica principal en común, y es que dejan poco lugar para la cuestión de por qué las cosas son como son, puesto que se nos da principalmente una descripción de la creación tal como eligieron hacerla los dioses.
+
+ 
+
+La filosofía comenzó cuando el hombre se preguntó acerca del mundo con independencia de este marco teológico. Un ejemplo temprano es la descripción de los filósofos de que el mundo estaba hecho de tierra, fuego, agua y aire. Sin duda se les dijo en esa época que los dioses hicieron las cosas de ese modo y que debían dejar de indagar acerca de ello. A partir de esos primeros intentos de explicar las cosas surgió lentamente la filosofía, así como nuestra ciencia actual. No es que la ciencia explique ``por qué'' las cosas son como son ---la gravitación no explica el por qué las cosas caen--- pero la ciencia nos proporciona tantos detalles de ``cómo'' son que tenemos la impresión de que comprendemos ``por qué''. Permítasenos ser claros en cuanto a este punto: es debido a la inmensidad de detalles interrelacionados el que la ciencia parezca decir ``por qué'' el universo es como es.
+
+ 
+
+Nuestra herramienta principal para llevar a cabo las largas cadenas de condensado razonamiento requeridas por la ciencia es la matemática. Ciertamente, la matemática podría definirse como la herramienta mental diseñada para dicho propósito. Muchas personas a través de los tiempos se han planteado la cuestión que formulamos en el título, ``¿por qué la matemática es tan irrazonablemente eficaz?'' Al preguntarlo estamos observando más el lado lógico y menos el material de en qué consiste el universo y de cómo funciona.
+
+ 
+
+Los matemáticos que trabajan en los fundamentos de la matemática se ocupan principalmente de la consistencia y de las limitaciones del sistema. No parece que les interese por qué el mundo admite aparentemente una explicación lógica. En cierto sentido estoy en la posición de los primeros filósofos griegos que se maravillaban del aspecto material, y mis respuestas en cuanto al aspecto lógico no son probablemente mucho mejores de lo que eran las suyas en su época. Pero debemos empezar en alguna parte y en algún momento para explicar el fenómeno de que el mundo parece estar organizado según un patrón lógico que tiene un paralelismo con la mayor parte de la matemática, y de que la matemática es el lenguaje de la ciencia y de la ingeniería.
+
+ 
+
+Una vez organizado el esquema principal, debía considerar a continuación el modo mejor de comunicar mis ideas y opiniones a otros. La experiencia muestra que no siempre tengo éxito en este asunto. Finalmente pensé que las siguientes observaciones preliminares podrían ayudar.
+
+ 
+
+En algunos aspectos este debate es muy teórico. Debo mencionar, al menos en parte, varias teorías de la actividad general llamada matemática, así como recordar algunas partes escogidas de la misma. Además, existen varias teorías de aplicaciones. Así, en cierto modo, esto conduce a una teoría de teorías. Lo que podría sorprenderles a ustedes es que adoptaré el enfoque experimental al tratar de tales materias. No importa lo que se suponga que sean las teorías, o lo que ustedes piensen que deben ser, o incluso lo que los expertos en el tema afirmen que son; permítasenos adoptar la actitud científica y observar lo que son. Soy consciente de que mucho de lo que digo, especialmente acerca de la naturaleza de la matemática, no agradará a muchos matemáticos. Mi enfoque experimental es bastante extraño a su mentalidad y a sus creencias preconcebidas. ¡Qué vamos a hacerle!
+
+ 
+
+La inspiración para este artículo provino del de título parecido ``{\it The Unreasonable Effectiveness of Mathematics in the Natural Sciences}''  de E. P. Wigner. Se advertirá que he prescindido de parte del título y, para aquellos que ya lo hayan leído, que no duplico mucho de su contenido (no creo que pueda mejorar su presentación). Por otra parte, dedicaré más tiempo a tratar de explicar la cuestión implícita en el título. Pero cuando todas mis explicaciones hayan acabado, lo que falte es todavía tanto como para que la cuestión quede esencialmente sin respuesta.
+
+ 
+
+\subsection*{La eficacia de la matemática}
+
+ En su artículo, Wigner proporciona un gran número de ejemplos de la eficacia de la matemática en las ciencias físicas. Permítaseme, por consiguiente, aprovechar mis propias experiencias que están más próximas a la ingeniería. Mi primera experiencia real en el uso de la matemática para predecir cosas del mundo real fue en relación con el diseño de bombas atómicas durante la Segunda Guerra Mundial. ¿Cómo era que los números tan pacientemente calculados en los primitivos ordenadores de relés concordaban tan bien con lo que ocurrió en la primera prueba efectuada en Alamogordo? No se hicieron, y no se podían hacer, experimentos a pequeña escala para comprobar directamente los cálculos. Una experiencia posterior con misiles guiados me mostró que esto no era un fenómeno aislado ---constantemente lo que predecimos a partir de símbolos matemáticos se realiza en el mundo real---. Naturalmente, al trabajar para la Bell System, llevé a cabo muchos cálculos sobre telefonía y otros trabajos matemáticos sobre cosas tan diversas como tubos conductores de ondas, la ecualización de líneas de televisión, la estabilidad de sistemas complejos de comunicación y el bloqueo de llamadas a través de una oficina central de telefonía, por citar unas pocas. Por atractivo, puedo citar la investigación sobre el transistor, el vuelo espacial y el diseño de ordenadores, pero casi toda la ciencia y la  ingeniería ha utilizado amplias manipulaciones matemáticas con éxitos destacables.
+
+ 
+
+Muchos de ustedes conocen la historia de las ecuaciones de Maxwell, de cómo hasta cierto punto por razones de simetría introdujo un cierto término, y cómo en su momento Hertz halló las ondas de radio predichas por la teoría. Muchos otros ejemplos de efectos físicos desconocidos predichos exitosamente a partir de la formulación matemática son bien conocidos y no necesitan ser repetidos aquí.
+
+
+El papel fundamental de la invariancia es remarcado por Wigner. Es fundamental para la mayor parte de la matemática así como de la ciencia. Fue la falta de invariancia de las ecuaciones de Newton (la necesidad de un marco de referencia absoluto para las velocidades) lo que condujo a Lorentz, Fitzgerald, Poincaré y Einstein a la teoría de la relatividad especial.
+
+ 
+
+Wigner observa también que los mismos conceptos matemáticos hacen surgir conexiones completamente inesperadas. Las funciones trigonomé\-tricas, por ejemplo, que intervienen en la astronomía de Tolomeo resultan ser las funciones que son invariantes con respecto a la traslación (invariancia temporal). Son también las funciones apropiadas para los sistemas lineales. La enorme utilidad de los mismos elementos de la matemática en situaciones del todo distintas no tiene explicación racional (hasta ahora).
+
+ 
+
+Es más, se ha mantenido la opinión desde hace mucho que la sencillez de la matemática es la clave de sus aplicaciones en la física. Einstein es el exponente más famoso de esta creencia. Pero incluso en la propia matemática la simplicidad es destacable, al menos para mí; las ecuaciones algebraicas más sencillas, lineales y cuadráticas, corresponden a las entidades geométricas más simples, líneas rectas, círculos y cónicas. Esto hace posible en la práctica la geometría analítica. ¿Cómo es posible que la matemática simple, siendo un producto de la mente humana, pueda resultar tan remarcadamente útil en tantas situaciones tan diversas?
+
+ 
+
+Porque de estos éxitos de la matemática resulta en la actualidad una fuerte tendencia a hacer matemática cada una de las ciencias. Es habitual que se considere un objetivo a alcanzar, si no hoy, el día de mañana. Para los lectores presentes me ceñiré a la física y a la astronomía para más ejemplos.
+
+ 
+
+Pitágoras es el primero que se sepa que afirmó claramente que ``La matemática es el medio para entender el universo''. Lo  dijo alta y claramente: ``El número es la medida de todas las cosas''.
+
+ 
+
+Kepler es otro ejemplo famoso de esta actitud. Creyó apasionadamente que la obra de Dios solamente podía comprenderse a través de la matemática. Después de veinte años de cálculos tediosos halló sus famosas tres leyes del movimiento planetario, tres expresiones matemáticas comparativamente sencillas que describen los movimientos en apariencia complejos de los planetas.
+
+ 
+
+Fue Galileo quien dijo, ``Las leyes de la Naturaleza están escritas en el lenguaje de la matemática''. Newton utilizó los resultados de Kepler y de Galileo para deducir las famosas leyes newtonianas del movimiento, que junto con la ley de la gravitación son quizás los ejemplos más famosos de la irrazonable eficacia de la matemática en la ciencia. No solamente predijeron dónde deberían hallarse los planetas conocidos sino que predijeron las posiciones de planetas desconocidos, los movimientos de estrellas distantes, las mareas, etc.
+
+ 
+
+La ciencia se compone de leyes que originalmente están basadas en un pequeño y cuidadosamente elegido conjunto de observaciones, con frecuencia medidas originalmente sin mucha precisión; pero más tarde se ha encontrado que dichas leyes se aplican a rangos de observaciones mucho más amplias y mucho más precisas que las justificadas por los datos originales. No siempre, para ser exactos, pero con la frecuencia suficiente como para requerir una explicación.
+
+
+
+Durante mis treinta años de práctica de la matemática en la industria, me he preocupado con asiduidad por las predicciones que he efectuado. A partir de las matemáticas elaboradas en mi despacho predije confiadamente (al menos para los demás) algunos acontecimientos futuros ---si se hace esto y esto, se verá esto y esto--- y normalmente resultó que tenía razón. ¿Cómo podrían saber los fenómenos lo que yo había predicho (basándome en matemáticas hechas por humanos), de forma que pudieran apoyar mis predicciones? Es ridículo pensar que es la manera según la cual funcionan las cosas. No, es que la matemática proporciona, de algún modo, un modelo confiable para la mayor parte de lo que sucede en el universo. Y puesto que soy capaz de realizar solamente matemáticas sencillas, ¿cómo es posible que la matemática simple sea suficiente para predecir tanto?
+
+
+
+Podría seguir citando más ejemplos que ilustran la eficacia irrazonable de la matemática, pero sólo resultaría aburrido. Ciertamente, sospecho que muchos de ustedes conocen ejemplos que yo desconozco. Déjenme, por lo tanto, suponer que dan por garantizada una larga lista de éxitos, muchos de ellos tan espectaculares como la predicción de un nuevo planeta, de un fenómeno físico nuevo, de un nuevo artefacto. Con tiempo limitado, deseo emplearlo en intentar hacer lo que creo que Wigner evitó: dar al menos algunas respuestas parciales a la pregunta implícita en el título.  
+
+ 
+
+\subsection*{¿Qué es la matemática?}
+
+ Habiendo observado la eficacia de la matemática, necesitamos explorar la pregunta ``¿Qué es la matemática?'' Este es el título de un famoso libro de Courant y Robbins. En el mismo no intentan dar una definición formal, sino más bien se contentan con mostrar lo que es la matemática proporcionando muchos ejemplos. De modo semejante, no daré una definición integral. Pero me acercaré a ella más de lo que hicieron los autores antes citados, tratando ciertas características sobresalientes de la matemática tal como las veo.
+
+ 
+
+Quizás el mejor método para enfocar la pregunta de lo que es la matemática sea comenzar por el principio. En el pasado prehistórico distante, en el cual debemos fijarnos para los inicios de la matemática, existían ya cuatro facetas principales de la misma. En primer lugar estaba la capacidad de enlazar largas cadenas de razonamiento concluyente, que es lo que actualmente caracteriza la mayor parte de la matemática. En segundo lugar, estaba la geometría, que nos conduce, a través del concepto de continuidad, hasta la topología y más allá. En tercer lugar, estaba el número, que conduce a la aritmética, al álgebra y más allá. Finalmente estaba el gusto artístico, que representa un papel tan grande en la matemática moderna. Existen, naturalmente, muchas clases distintas de belleza en matemáticas. En la teoría de números parece ser principalmente la belleza del detalle casi infinito; en el álgebra abstracta la belleza reside principalmente en la generalidad. Diversas áreas de la matemática tienen así estándares distintos de estética.
+
+ 
+
+La historia más temprana de la matemática debe, naturalmente, ser especulación, puesto que no tenemos, ni parece que hayamos tenido nunca, ninguna evidencia real y convincente. Parece, sin embargo, que en los mismos fundamentos de la vida primitiva sobre los que se construyó, con fines de supervivencia si no por otras razones, existía una comprensión de la causa y el efecto. Una vez que se construye este rasgo más allá de una única observación para una serie de ``Si esto, entonces aquello, y luego sigue también aquello otro...'' estamos en camino de la primera característica que mencioné de la matemática, las largas cadenas de razonamiento. Pero me resulta difícil ver cómo la simple supervivencia darviniana de los más aptos seleccionaría la capacidad  
+para realizar las largas cadenas que la matemática y la ciencia parecen necesitar.
+
+ 
+
+La geometría parece haber surgido a partir de los problemas de adornar el cuerpo humano con fines diversos, tales como los ritos religiosos, los asuntos sociales y la atracción del sexo opuesto, así como a partir de la decoración de las superficies de paredes, vasijas, utensilios y atuendos. Esto implica también el cuarto aspecto mencionado, el gusto estético, y este es uno de los fundamentos profundos de la matemática. La mayor parte de los libros de texto repiten a los griegos y dicen que la geometría nació a partir de las necesidades de los egipcios para reconocer las tierras después de cada inundación del río Nilo, pero yo atribuyo mucho más a la estética de lo que hacen la mayoría de los historiadores de la matemática y proporcionalmente menos a la utilidad inmediata.
+
+ 
+
+El tercer aspecto de la matemática, los números, se originan a partir del acto de contar. Los números son tan fundamentales que un matemático famoso [Kroneker] dijo una vez que ``Dios hizo a los enteros y el hombre elaboró el resto''. Los enteros nos parecen ser tan fundamentales que esperamos encontrarlos si alguna vez hallamos vida inteligente en el universo. He intentado, con poco éxito, conseguir que mis amigos comprendan mi asombro ante el hecho de que la abstracción de los enteros para la operación de contar es a la vez posible y útil. ¿No es notable que 6 ovejas más 7 ovejas hagan 13 ovejas, y que 6 piedras más 7 piedras hagan 13 piedras? ¿No es un milagro que el universo esté construido de tal forma que sea posible una abstracción tan simple como el número? Para mí este es uno de los ejemplos más robustos de la irrazonable eficacia de la matemática. Ciertamente lo encuentro a la vez extraño e inexplicable.
+
+ 
+
+En el desarrollo de los números, lo siguiente es el hecho de que tales números para contar, los enteros, se emplearon con éxito para medir cuántas veces se podía utilizar una longitud estándar para agotar la longitud deseada que se está midiendo. Pero debió ocurrir pronto, comparativamente hablando, que no encajara exactamente un número completo de unidades con la longitud que se medía, y los medidores se vieron conducidos a las fracciones ---la componente extra que quedaba se utilizó para medir la longitud estándar---. Las fracciones no son números para contar; son números para medir. Debido a su utilización corriente en la medición, pronto se halló, por una extensión adecuada de las ideas, que las fracciones obedecían a las mismas reglas de manipulación que los enteros, con el beneficio añadido que posibilitaban la división en todos los casos (no he llegado todavía al número cero). Cierta familiaridad con las fracciones revela pronto que entre dos fracciones cualesquiera es posible intercalar tantas más como uno desee, y que en cierto sentido son homogéneamente densas en todas partes. Pero cuando extendemos el concepto de número para incluir las fracciones, debemos abandonar la idea del número siguiente.
+
+
+
+ 
+
+Esto nos conduce de nuevo a Pitágoras, que pasa por ser el primero en demostrar que la diagonal de un cuadrado y su lado no tienen medida común ---están relacionados irracionalmente---. Esta observación produjo aparentemente una profunda conmoción en Grecia: la matemática. Hasta ese momento el sistema numérico discreto y la geometría continua habían florecido codo a codo con poco conflicto. La crisis de la inconmensurabilidad tropezó con el enfoque euclidiano de la matemática. Es un hecho curioso que los griegos tempranos intentaran hacer rigurosa la matemática reemplazando las incertidumbres de los números por la geometría que creían más cierta (debida a Eudoxio). Fue un acontecimiento importante para Euclides, y como resultado se encuentra en {\it Los Elementos}  un conjunto de lo que ahora consideramos teoría de números y álgebra, moldeados en la forma de geometría. En oposición a los antiguos griegos, que dudaban de la existencia del sistema de números reales, hemos decidido que debe haber un número que mida la longitud de la diagonal de un cuadrado unitario (aunque no necesitemos hacerlo), y así es más o menos como hemos ampliado el sistema de números racionales para incluir los números algebraicos. Fue el simple deseo de medir las longitudes lo que condujo a ello. ¿Cómo puede alguien negar que existe un número que mide la longitud de cualquier segmento de línea recta?
+
+ 
+
+Los números algebraicos, que son raíces de polinomios cuyos coeficientes son enteros, fraccionarios y ---como se demostró más tarde--- incluso algebraicos, quedaron pronto bajo control mediante la simple extensión de las mismas operaciones que se utilizaban sobre el aún más simple sistema de números.
+
+ 
+
+No obstante, la medida de la circunferencia con respecto a su diámetro pronto obligó a considerar la ratio llamada $\pi$. No es un número algebraico, puesto que no existe ninguna combinación lineal de potencias de $\pi$ con coeficientes enteros que se anule exactamente. Al ser una de las longitudes una línea curva (la circunferencia), y la otra un segmento de línea recta (el diámetro) la existencia de la ratio es menos cierta que la correspondiente a la diagonal del cuadrado con respecto a su lado; pero puesto que al parecer debe existir tal número, los números transcendentes se incorporaron gradualmente al sistema de numeración. De este modo, mediante una ampliación adecuada de las primeras ideas sobre los números, los números trascendentes fueron admitidos consistentemente en el sistema numérico, a pesar de que pocos estudiantes se sienten del todo cómodos con el aparato técnico que se utiliza convencionalmente para mostrar su consistencia.
+
+ 
+
+Un avance en el sistema numérico fue la incorporación del número cero y de los números negativos. Esta vez la ampliación requirió el abandono de la división por el número específico cero. Esto parece redondear el sistema de números reales (en tanto nos limitemos al proceso de tomar los límites de series de números y no admitamos más operaciones); no es que en la actualidad tengamos un fundamento firme, lógico y sencillo para ellos, pero se dice que la familiaridad engendra el desacato, y todos estamos más o menos familiarizados con el sistema de números reales. Pocos de nosotros en nuestros momentos más cuerdos creemos que los postulados particulares que algunos lógicos han soñado han creado los números; antes bien, la mayoría de nosotros creemos que los números reales están sencillamente ahí y que se  trata de un juego interesante, divertido e importante el tratar de hallar un conjunto elegante de postulados que den cuenta de los mismos. Pero no nos confundamos: las paradojas de Zenón están todavía, después incluso de dos mil años, demasiado frescas en nuestras mentes como para hacernos creer que comprendemos todo lo que quisimos hacer acerca de la relación entre el sistema discreto de números y la línea continua que deseamos modelar. Sabemos, a partir del análisis no estándar si no de otra fuente, que los lógicos pueden establecer postulados que incluyan todavía más entidades en la línea real, pero hasta aquí pocos de nosotros hemos deseado avanzar por esa senda. Es justo mencionar que existen algunos matemáticos que dudan de la existencia del sistema convencional de números reales. Algunos teóricos de la computación admiten la existencia únicamente de los ``números computables''.
+
+ 
+
+El siguiente paso en el asunto es el sistema de números complejos. Según la historia que conozco, Cardano fue el primero en entenderlos en un sentido auténtico. En su ``{\it El arte magna de las reglas del álgebra}''  dice: ``Dejando aparte las torturas mentales involucradas al multiplicar $(5 + \sqrt{15})$ por $(5 - \sqrt{ -15})$ para obtener $25-(-15)$ ...'' De este modo, reconoció claramente que las mismas operaciones formales sobre los símbolos de los números complejos darían resultados significativos. De esta manera el sistema de números reales se extendió gradualmente al de los números complejos, con la excepción de que esta vez la ampliación requería abandonar la propiedad de ordenación de los números ---los números complejos no se pueden ordenar en el sentido corriente---. Cauchy fue conducido aparentemente a la teoría de las variables complejas por el problema de la integración de funciones reales a lo largo de la línea real. Halló que plegando el camino de integración en el plano complejo podía resolver los problemas de integración real.
+
+ 
+
+Hace pocos años tuve el placer de impartir un curso sobre variables complejas. Como ocurre siempre que me veo envuelto en el tema, de nuevo lo terminé con la sensación de que ``Dios hizo el universo con números complejos''. Representan, claramente, un papel central en la mecánica cuántica. Son una herramienta natural en muchas otras áreas de aplicación, tal como circuitos y campos  eléctricos y otras cosas.
+
+ 
+
+Para resumir, a partir de la simple operación de contar los enteros dados por Dios, hemos realizado varias ampliaciones de las ideas de números para incluir más cosas. A veces las ampliaciones se hicieron por razones estéticas, y con frecuencia hemos abandonado alguna propiedad del anterior sistema numérico. De este modo hemos llegado a un sistema numérico que es irrazonablemente efectivo incluso dentro de la propia matemática; sirva como testigo el modo mediante el cual hemos resuelto muchos problemas de la teoría de números del sistema original discreto de contar mediante el uso de una variable compleja.
+
+ 
+
+Por lo anterior vemos que una de los principales hilos conductores de la matemática es la ampliación, la generalización, la abstracción ---son todas más o menos la misma cosa--- de conceptos bien conocidos a nuevas situaciones. Pero observemos que en el proceso mismo las propias definiciones se alteran sutilmente. Por consiguiente, lo cual no es lo bastante reconocido, las antiguas demostraciones de teoremas pueden convertirse en pruebas falsas. Las antiguas pruebas no cubren más las cosas definidas recientemente. El milagro es que casi siempre los teoremas son todavía ciertos; es meramente una cuestión de recomponer las pruebas. El ejemplo clásico de esta recomposición es {\it Los Elementos} de Euclides. Hemos hallado que es necesario añadir algunos nuevos postulados (o axiomas, si se desea, puesto que no nos preocupa la distinción entre los mismos) para que cumplan con los estándares actuales de la prueba. Aún así ¿cómo es que ningún teorema de los trece libros es ahora falso? No se ha encontrado ningún teorema que sea falso, a pesar de que con frecuencia las demostraciones dadas por Euclides nos parecen ahora falsas. Y este fenómeno no está confinado al pasado. Se afirma que un ex-editor de revistas matemáticas dijo una vez que más de la mitad de los nuevos teoremas publicados actualmente son esencialmente verdaderos a pesar de que las demostraciones publicadas son falsas. ¿Cómo puede ser, si la matemática consiste en la deducción rigurosa de teoremas a partir de postulados supuestos y resultados previos? Bueno, es obvio para todo el que no esté cegado por la autoridad que la matemática no es lo que los profesores de la escuela elemental nos dijeron. Es manifiestamente algo más.
+
+ 
+
+¿Qué es este ``algo más''? Una vez que se empieza a observar se halla que si nos ciñéramos a los axiomas y a los postulados podríamos deducir poca cosa. El primer paso principal es la introducción de nuevos conceptos derivados de las suposiciones, conceptos tales como los triángulos. La búsqueda de conceptos y definiciones adecuados es una de las principales características de la elaboración de la gran matemática.
+
+ 
+
+En cuanto al asunto de las demostraciones, la geometría clásica comienza con el teorema y trata de hallar una prueba. Aparentemente fue solamente en la década de 1850 aproximadamente cuando se reconoció claramente que el enfoque opuesto también es válido (ocasionalmente se había utilizado con anterioridad). Con frecuencia es la prueba lo que genera el teorema. ¡Vemos que podemos demostrar algo y luego examinamos la prueba para ver qué es lo que hemos probado! Estos se llaman usualmente ``teoremas generados por demostración''. Un ejemplo clásico es el concepto de convergencia uniforme. Cauchy demostró que una serie convergente de términos, cada uno de los cuales es continuo, converge a una función continua. Al mismo tiempo se sabía que existían series de Fourier de funciones continuas que convergían a un límite discontinuo. Mediante un examen cuidadoso de la demostración de Cauchy se halló el error y se reparó cambiando la hipótesis del teorema de modo que precise ``una serie uniformemente convergente''.
+
+ 
+
+Más recientemente, hemos realizado un intenso estudio de lo que se llama los fundamentos de la matemática ---que en mi opinión debería ser visto como el almenaje más alto de la matemática en lugar de sus cimientos---. Es un campo interesante, pero los principales resultados de la matemática son inaccesibles a lo que se halla allí ---simplemente no abandonaremos la mayor parte de la matemática con independencia de lo ilógica que pueda resultar a la investigación de sus fundamentos---.
+
+ 
+
+Espero haber mostrado que la matemática no es la cosa que con frecuencia creemos, que está en permanente cambio y que por lo tanto incluso si he tenido éxito al definirla hoy, la definición podría no ser adecuada mañana. Al igual que con la idea del rigor, tenemos un estándar cambiante. La actitud dominante en la ciencia es que no somos el centro del universo, que no estamos situados en un lugar excepcional, etc. y de modo semejante es difícil para mí creer que hemos alcanzado ahora el rigor definitivo. Así pues, no podemos estar seguros de las demostraciones actuales de nuestros teoremas. Ciertamente me parece que {\sf Los postulados de la matemática no figuraban en las tablas de piedra que Moisés bajó del Monte Sinaí}. Es necesario resaltar esto. Comenzamos con un concepto vago en nuestras mentes, luego creamos varios conjuntos de postulados, y gradualmente establecemos un conjunto particular. En el enfoque riguroso de los postulados el concepto original se reemplaza ahora por lo que los postulados definen. Esto conduce a una evolución ulterior del concepto bastante difícil y como resultado tiende a ralentizar la evolución de la matemática. No se trata de que el enfoque de los postulados sea impropio, sino solamente que su arbitrariedad debería reconocerse claramente, y deberíamos estar preparados para cambiarlos cuando la necesidad resulte evidente.
+
+ 
+
+La matemática está construida por el hombre y por lo tanto es apta para ser alterada continuamente por él. Quizás las fuentes originales de la matemática hayan sido forzadas, pero en el ejemplo que he utilizado vemos que en el desarrollo de un concepto tan sencillo como el número hemos hecho elecciones para las ampliaciones, controladas sólo parcialmente por la necesidad y frecuentemente, a mi parecer, más por la estética. Hemos intentado hacer que la matemática sea una cosa consistente y bella, y al hacerlo hemos conseguido un número asombroso de aplicaciones exitosas en cuanto al mundo real.
+
+ 
+
+La idea de que los teoremas provienen de los postulados no se corresponde con la simple observación. Si no se hubiera visto que el teorema de Pitágoras se deriva de los postulados, hubiéramos buscado de nuevo un modo de alterar los postulados hasta que resultara verdadero. Los postulados de Euclides provienen del teorema de Pitágoras, y no al revés. Durante treinta años he estado haciendo la observación de que si usted entra en mi despacho y me hace una demostración de que el teorema de Cauchy es falso, me interesaría mucho, pero creo que en el análisis final alteraríamos los supuestos hasta que el teorema resulte cierto. Así, existen muchos resultados en matemáticas que son independientes de los supuestos y de la demostración.
+
+ 
+
+¿Cómo decidimos en una ``crisis'' qué partes de la matemática conservar y qué partes abandonar? La utilidad es un criterio importante, pero con frecuencia ¡hay más utilidad en la creación de más matemáticas que en las aplicaciones al mundo real! Hasta aquí en cuanto a mi  discusión acerca de la matemática.
+
+ 
+
+\subsection*{Algunas explicaciones parciales}
+
+ Dispondré mis explicaciones acerca de la irrazonable eficacia de la matemática bajo cuatro apartados.
+
+ 
+
+\paragraph*{1. Vemos lo que buscamos.}
+
+
+ Nadie se sorprende si después de haberse colocado gafas azules el mundo parece azulado. Propongo mostrar algunos ejemplos de cuán cierto es esto en la ciencia actual. Para hacerlo voy a violar de nuevo muchas creencias amplia y fervientemente sostenidas. Pero escúchenme hasta el final.
+
+ 
+
+He elegido el ejemplo de los científicos en la primera parte por una buena razón. Pitágoras es para mí el primer gran físico. Fue el que halló que vivimos en los que los matemáticos llaman $L^2$ ---la suma de los cuadrados de los dos lados de un triángulo rectángulo da el cuadrado de la hipote\-nusa\mbox{---.} Como dije antes, este no es un resultado de los postulados de la geometría, sino uno de los resultados que conformaron los postulados.
+
+ 
+
+Consideremos seguidamente a Galileo. No hace mucho intentaba colocarme en los zapatos de Galileo, por así decirlo, de modo que pudiera sentir cómo llegó a descubrir la ley de la caída de los cuerpos. Intento hacer este tipo de cosas para poder aprender a pensar como lo hacían los grandes maestros; deliberadamente intento pensar del modo como lo podían haber hecho ellos. Bien, Galileo era un hombre instruido y un experto en las discusiones escolásticas. Conocía muy bien cómo debatir la cuestión del número de ángeles que caben en la cabeza de un alfiler, y cómo argumentar los dos lados de cualquier cuestión. Estaba entrenado en dichas artes mucho mejor que cualquiera de nosotros en nuestros días. Me lo imagino sentado un buen día con una bola ligera en una mano y otra pesada en la otra, lanzándolas suavemente hacia arriba. Dice, sopesándolas: ``Es obvio para cualquiera que los objetos más pesados caen más deprisa que los ligeros y, de todas formas, Aristóteles así lo afirma''. ``Pero supongamos'', dice para sí mismo, según la mentalidad a que hemos aludido, ``que al caer el cuerpo se rompe en dos pedazos. Naturalmente los dos trozos se ralentizarían hasta sus correspondientes velocidades. Pero supongamos ahora que una de las piezas toca a la otra. ¿Serán ahora una pieza y ambas se acelerarán? Supongamos que ato las dos piezas juntas. ¿Cuán fuertemente debo hacerlo para que se conviertan en una sola pieza? ¿Con un cordel ligero? ¿Con una cuerda? ¿Con pegamento? ¿Cuándo las dos piezas se convierten en una?'' Cuanto más pensaba en ello ---y cuanto más pensemos en ello---  más irrazonable se vuelve la pregunta de cuándo los dos cuerpos son uno. Sencillamente, no existe ninguna respuesta razonable a la cuestión de cómo un cuerpo sabe lo pesado que es, o si es una pieza, o dos o muchas. Puesto que los cuerpos que caen hacen algo, la única posibilidad es que todos caigan a la misma velocidad, a menos que interfieran con otras fuerzas. No puede ser de otro modo. Es posible que luego realizara algunos experimentos, pero sospecho vehementemente que sucedió algo parecido a lo que he imaginado. Más tarde encontré una historia semejante en un libro de Polya. Galileo encontró su ley no mediante el experimento sino por el pensamiento llano y simple, mediante un razonamiento escolástico. Sé que los libros de texto presentan con frecuencia la ley de la caída de los cuerpos como una observación experimental; yo reclamo que se trata de una ley lógica, una consecuencia de cómo tendemos a pensar.
+
+ 
+
+Newton, tal como lo leemos en los libros, dedujo la ley del inverso del cuadrado a partir de las leyes de Kepler, aunque usualmente lo presentan de otro modo; a partir de la ley inverso cuadrática los libros de texto deducen las leyes de Kepler. Pero si creen en algo como la conservación de la energía y piensan que vivimos en un espacio euclidiano tridimensional, ¿de qué otro modo podría disminuir una fuerza central simétrica?
+
+ 
+
+Las mediciones del exponente mediante experimentos son en gran medida intentos de comprobar si vivimos en un espacio euclidiano, y no en absoluto una verificación de la ley inverso cuadrática.
+
+ 
+
+Pero si no les gustan esos dos ejemplos, permítanme pasar a la ley más citada de los tiempos recientes, el principio de incertidumbre. Sucede que recientemente he estado implicado en la escritura de un libro sobre filtros digitales  sabiendo muy poco acerca del asunto. Como resultado hice la pregunta ``¿por qué deberíamos hacer el análisis en términos de las integrales de Fourier? ¿Por qué son las herramientas naturales para el problema?'' Pronto descubrí, como muchos de ustedes ya saben, que las funciones propias de la transformación son los exponentes complejos. Si se desea invariancia temporal, y ciertamente los físicos y los ingenieros lo quieren así (de tal forma que un experimento realizado hoy o mañana arroje los mismos resultados), en tal caso vamos a parar a dichas funciones. De modo semejante, si se cree en la linealidad entonces tenemos de nuevo las funciones propias. En mecánica cuántica los estados cuánticos son absolutamente aditivos; no se trata sólo de una cómoda aproximación lineal. Así, las funciones trigonométricas son las funciones propias que se necesitan tanto para la teoría de los filtros digitales como para la mecánica cuántica, por citar dos aplicaciones.
+
+Al utilizar ahora estas funciones propias tendrá naturalmente que representar diversas funciones, primero un número finito de ellas y luego un número infinito de las mismas, digamos las series de Fourier y la integral de Fourier. Pues bien, hay un teorema en la teoría de las integrales de Fourier que dice que la variabilidad de la función multiplicada por la variabilidad de su transformada excede una constante fija, en una notación $I/(2 \pi)$. Esto me dice que en cualquier sistema lineal temporalmente invariante debemos encontrar un principio de incertidumbre. El tamaño de la constante de Planck es una cuestión de la identificación detallada de las variables con las integrales, pero la desigualdad debe presentarse.
+
+ 
+
+Como otro ejemplo que lo que se ha pensado con frecuencia que es un descubrimiento de la física pero que resulta haber sido colocado por nosotros mismos, cito el hecho bien conocido de que la distribución de las constantes físicas no es uniforme; más bien la probabilidad de que una constante física tenga un dígito inicial de 1, 2, o 3 es aproximadamente del 60\%, y naturalmente los dígitos iniciales 5, 6, 7, 8, y 9 se presentan solamente en un 40\% de las veces. Esta distribución se aplica a muchos tipos de números, incluida la distribución de los coeficientes de una serie de potencias que tiene una única singularidad en el círculo de convergencia. Un examen más detallado de este fenómeno muestra que se trata principalmente de una consecuencia del modo como usamos los números.
+
+ 
+
+Habiendo ofrecido cuatro ejemplos distanciados de situaciones no triviales en los cuales el fenómeno original proviene de las herramientas matemáticas que utilizamos y no del mundo real, estoy dispuesto a sugerir fervientemente que gran parte de lo que vemos procede de las gafas con las que miramos. Por supuesto esto va contra gran parte de lo que se nos ha enseñado, pero consideren los argumentos cuidadosamente. Podemos decir que fue el experimento el que forzó el modelo que usamos, pero yo sugiero que, cuanto más se piensa en los cuatro ejemplos, más propensos estamos de sentirnos inconfortables. No hemos seleccionado teorías arbitrarias, sino unas que son centrales para la física.
+
+ 
+
+En años recientes fue Einstein quien proclamó de modo más clamoroso la simplicidad de las leyes de la física, y quien utilizó la matemática de forma tan exclusiva que es conocido popularmente como matemático. Cuando se examina su artículo de la teoría de la relatividad especial  uno tiene la sensación de que está tratando con el enfoque de un filósofo escolástico. Einstein sabía por adelantado cómo tenía que mostrarse la teoría, y exploró las teorías con herramientas matemáticas y no con experimentos reales. Tenía tanta confianza en la corrección de las teorías de la relatividad que, cuando se realizaron experimentos para verificarlas, no estuvo muy interesado en los resultados, diciendo que deberían resultar conformes con ellas o bien los experimentos estarían errados. Y muchos creen que las dos teorías de la relatividad descansan más en bases filosóficas que en experimentos reales.
+
+ 
+
+Así pues mi primera respuesta a la cuestión implícita acerca de la irrazonable eficacia de la matemática es que enfocamos las situaciones con un aparato intelectual tal que en la mayoría de los casos solamente podemos hallar lo que hallamos.  Es a la vez así de sencillo y así de tremendo. Lo que se nos ha enseñado acerca de que los experimentos en el mundo real constituyen las bases de la ciencia es cierto sólo en parte. Eddington fue más allá que esto: pretendía que una mente suficientemente sabia podría deducir toda la física. Yo estoy sugiriendo solamente que se podría deducir de ese modo una parte sorprendentemente grande. Eddington ofreció una encantadora parábola para ilustrar este punto. Decía ``Unos cuantos hombres salieron a pescar en el mar con una red, y después de examinar lo recogido concluyeron que existía un tamaño mínimo para los peces del mar''.
+
+ 
+
+\paragraph*{2. Seleccionamos la clase de matemática que utilizamos.}
+
+ La matemática no siempre funciona. Cuando hallamos que los escalares no funcionan para las fuerzas, inventamos una matemática nueva, los vectores. Y yendo más allá hemos inventado los tensores. En un libro que he escrito recientemente  se emplean los enteros convencionales para etiquetas y los números reales para probabilidades; pero aparte de eso toda la aritmética y el álgebra que aparece en el libro, y hay mucha, sigue la regla de que $1+1=0$.
+
+ 
+
+Así pues, mi segunda explicación es que elegimos la matemática que encaja con la situación, y sencillamente no es cierto que las mismas matemáticas funcionen en cualquier situación.
+
+ 
+
+\paragraph*{3. La ciencia, de hecho, contesta comparativamente pocos problemas.}
+
+ Tenemos la ilusión de que la ciencia tiene respuestas para la mayor parte de nuestras preguntas, pero no es así. Desde los primeros tiempos el hombre ha meditado acerca de la verdad, de la belleza y de la justicia. Pero hasta donde me consta la ciencia no ha contribuido a las respuestas, ni me parece que la ciencia tenga mucho que decir sobre ello en el futuro próximo. En tanto en cuanto utilicemos una matemática en la cual el todo es la suma de las partes no es probable que esa matemática represente una herramienta para examinar esas tres famosas cuestiones. Realmente, para generalizar, casi todas nuestras experiencias en este mundo no caen bajo el dominio de la ciencia o de la matemática. Es más, sabemos (al menos pensamos que es así) que según el teorema de Gödel existen límites definitivos a lo que puede obtener la manipulación lógica de símbolos, y que existen límites en el dominio de la matemática. Ha sido un acto de fe por parte de los científicos pensar que el mundo puede explicarse mediante los términos sencillos que maneja la matemática. Cuando se tiene en cuenta cuánta ciencia está por responder se ve entonces que nuestros éxitos no son tan impresionantes como por otra parte pudiera parecer.
+
+ 
+
+\paragraph*{4. La evolución humana ha proporcionado el modelo.}
+
+ He tocado ya la materia de la evolución humana. He destacado que en las formas primitivas de vida deben haber estado las semillas de nuestra actual capacidad para crear y seguir largas cadenas de razonamiento preciso. Algunos   han alegado que la evolución darvinista debería haber seleccionado naturalmente para la supervivencia las formas de vida competitivas que poseían en sus mentes los mejores modelos de la realidad ---entendiendo por ``mejores'' lo mejor para la supervivencia y la propagación---. No hay duda de que en esto hay cierta verdad. Hallamos, por ejemplo, que podemos pensar acerca del mundo cuando es de un tamaño comparable al nuestro y a nuestros sentidos primarios no asistidos, pero que cuando pasamos a lo muy pequeño o a lo muy grande entonces nuestro pensamiento tiene grandes problemas. No parece que seamos capaces de pensar de modo apropiado con respecto a los extremos que van más allá del tamaño normal.
+
+ 
+
+Así como existen olores que los perros pueden oler y nosotros no podemos, y también sonidos que los perros oyen y nosotros no, así también existen longitudes de onda luminosas que no podemos ver y aromas que no podemos gustar. ¿Por qué entonces, estando nuestros cerebros ``cableados'' del modo en que están, nos sorprende la declaración de que ``quizás existen pensamientos que no podemos pensar''? La evolución, hasta el momento, puede habernos bloqueado posiblemente para ser capaces de pensar en ciertas direcciones; podrían existir pensamientos impensables.
+
+ 
+
+Si recuerdan que la ciencia moderna tiene solamente unos 400 años de antigüedad, y que hay unas 3 o 5 generaciones por siglo, entonces deben haber pasado como mucho unas 20 generaciones desde Newton y Galileo. Si se toman 4 mil años como edad de la ciencia en general, entonces obtenemos un límite máximo de 200 generaciones. Considerando los efectos de la evolución que estamos examinando vía la selección de pequeñas variaciones aleatorias,  no me parece que la evolución pueda explicar más que una pequeña parte de la irrazonable eficacia de la matemática.
+
+ 
+
+\paragraph*{Conclusión.} Por todo ello me veo forzado a concluir tanto que la matemática es irrazonablemente efectiva como que todas las explicaciones que he dado, consideradas en su conjunto, no son suficientes para explicar lo que hemos pretendido. Pienso que nosotros ---lo que quiere decir ustedes, principalmente--- debemos seguir intentando explicar por qué el lado lógico de la ciencia ---es decir la matemática, sobre todo--- es la herramienta apropiada para la exploración del universo tal como lo percibimos actualmente. Sospecho que es difícil que mis explicaciones sean tan buenas como las de los antiguos griegos, que decían en cuanto al lado material de la cuestión que la naturaleza del universo es tierra, fuego, agua y aire. El lado lógico de la naturaleza del universo requiere más exploración.
+
+
+
+
+\end{document}
