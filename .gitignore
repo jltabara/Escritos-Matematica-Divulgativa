@@ -1,2 +1,6 @@
 *.toc
 *.log
+*.gz
+*.aux
+
+
