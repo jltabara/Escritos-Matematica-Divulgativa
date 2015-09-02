@@ -32,3 +32,5 @@ Documentos de varios matemáticos tratando temas relacionados con las matemátic
 * El Matemático --> J. Von Neumann
 
 * Las Matemáticas. Su Origen y Desarrollo --> D. Struik
+
+* Los Problemas Futuros de la Matemática --> D. Hilbert
